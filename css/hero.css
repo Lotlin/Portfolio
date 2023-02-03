@@ -1,0 +1,42 @@
+.hero__container {
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+
+.hero {
+    position: relative;
+    min-height: 783px;
+    background-image: url("../image/main.jpg");
+    background-repeat: no-repeat;
+}
+
+.hero::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.4;
+    content: "";
+}
+
+.hero__title,
+.hero__description {
+    position: relative;
+    z-index: 1;
+}
+.hero__title {
+    top: 265px;
+    left: 350px;
+    color: #ffb822;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.hero__description {
+    top: 270px;
+    left: 160px;
+    font-size: 40px;
+    font-weight: 900;
+}
